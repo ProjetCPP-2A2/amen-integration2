@@ -1,0 +1,66 @@
+{
+        "QCustomSlideMenu": [{
+                "name": "leftMenu",
+                "defaultSize": [{
+                        "width": 200,
+                        "height": "parent"
+                }],
+                "collapsedSize": [{
+                        "width": 0,
+                        "height": "parent"
+                }],
+                "expandedSize": [{
+                        "width": 200,
+                        "height": "parent"
+                }],
+                "toggleButton": [{
+                        "buttonName": "menuBtn",
+                        "icons": [{
+                                "whenMenuIsCollapsed": ":/Blue Icons/icons/blue/menu.svg",
+                                "whenMenuIsExpanded": ":/Blue Icons/icons/blue/menu.svg"
+                        }],
+                        "style": [{
+                                "whenMenuIsCollapsed": [
+                                        "border: 2px solid transparent"
+                                ],
+                                "whenMenuIsExpanded": [
+                                        "border: 2px solid rgb(9, 5, 13)"
+                                ]
+                        }]
+                }],
+                "menuTransitionAnimation": [{
+                        "animationDuration": 2000,
+                        "animationEasingCurve": "Linear",
+                        "whenCollapsing": [{
+                                "animationDuration": 500,
+                                "animationEasingCurve": "Linear"
+                        }],
+                        "whenExpanding": [{
+                                "animationDuration": 500,
+                                "animationEasingCurve": "OutInBack"
+                        }]
+                }],
+                "menuContainerStyle": [{
+                        "whenMenuIsCollapsed": [
+                                "border: 2px solid transparent"
+                        ],
+                        "whenMenuIsExpanded": [
+                                "border: 2px solid rgb(9, 5, 13); background-color: rgb(9, 5, 13)"
+                        ]
+                }],
+                "floatPosition": [
+                        {
+                                "relativeTo": "centralwidget",
+                                "position": "top-left",
+                                "shadow":[
+                                        {
+                                                "color": "#000",
+                                                "blurRadius": 20,
+                                                "xOffset": 0,
+                                                "yOffset": 0
+                                        }
+                                ]
+                        }
+                ]
+        }]
+}
